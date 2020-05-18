@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="codemirror/addon/hint/show-hint.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://codemirror.net/theme/dracula.css">
+  <link rel="stylesheet" href="https://codemirror.net/addon/lint/lint.css">
+
+  
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+<div class="flex-con">
+  <div class="control-group html">
+    <label class="control-label" for="textarea2">Code</label>
+    <div class="controls">
+      <textarea class="code CodeMirror-code code CodeMirror cm-s-dracula" name="code" id="code" cols="40" rows="5" placeholder="Enter code here ..."
+        style="width: 810px; height: 200px">
+abc
+<div class="bg">I have background.</div>
+def
+</textarea>
+    </div>
+  </div>
+
+  <div class="control-group css">
+    <label class="control-label " for="textarea3">CSS</label>
+    <div class="controls">
+      <textarea id="codert" class="code CodeMirror-code code CodeMirror cm-s-dracula" name="codeCSS" cols="40" rows="5" placeholder="Enter code here ..."
+        style="width: 810px; height: 200px">
+.bg {
+background: steelblue;
+}
+</textarea>
+    </div>
+  </div>
+
+  <div class="control-group js">
+    <label class="control-label" for="textarea3">javascripts</label>
+    <div class="controls">
+      <textarea id="code-js" class="code CodeMirror-code code CodeMirror cm-s-dracula" autocorrect="off" autocapitalize="off"
+        spellcheck="false" tabindex="0"
+        style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;">
+        document.getElementsByClassName('bg')[0].innerHTML = "I have backgrasdound. And I am changed text by Javascript. ";
+      </textarea>
+    </div>
+  </div>
+</div>
+  <div id="result"></div>
+  <iframe id="preview"></iframe>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="http://codemirror.net/lib/codemirror.css">
+  <script src="https://codemirror.net/lib/codemirror.js"></script>
+  <script src="https://codemirror.net/addon/edit/matchbrackets.js"></script>
+  <script src="https://codemirror.net/mode/javascript/javascript.js"></script>
+  <script src="https://codemirror.net/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="https://codemirror.net/mode/xml/xml.js"></script>
+  <script src="https://codemirror.net/mode/css/css.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jshint/r07/jshint.js"></script>
+  <script src="https://codemirror.net/addon/lint/lint.js"></script>
+  <script src="https://codemirror.net/addon/lint/javascript-lint.js"></script>
+  <script src="https://rawgit.com/zaach/jsonlint/79b553fb65c192add9066da64043458981b3972b/lib/jsonlint.js"></script>
+  <script src="https://codemirror.net/addon/lint/css-lint.js"></script>
+  <script src="https://codemirror.net/addon/lint/html-lint.js"></script>
+  <script src="https://csslint.net/js/csslint.js"></script>
+  <script src="https://codemirror.net/addon/edit/closetag.js"></script>
+  <script src="https://codemirror.net/addon/selection/active-line.js"></script>
+  <script src="https://codemirror.net/addon/fold/foldcode.js"></script>
+  <script src="codemirror/addon/hint/javascript-hint.js"></script>
+  <script src="codemirror/addon/hint/show-hint.js"></script>
+  <script src="./editor.js"></script>
+</body>
+
+</html>
